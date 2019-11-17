@@ -2,6 +2,8 @@
 <html>
 <head>
 	<title>Javascript</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script type="text/javascript" src="script.js"></script>
@@ -16,7 +18,7 @@
 
   <!-- Left-aligned links (default) -->
   <div class="topnav-left">
-  	<a href="#news">Plant</a>
+  	<a href="#plant">Plant</a>
   </div>
   	
   
@@ -24,30 +26,203 @@
 
   <!-- Right-aligned links -->
   <div class="topnav-right">
-    <a href="#about">info</a>
+    <a href="#info">info</a>
   </div>
 
 </div>
-<div class="main" style="text-align: center; padding-top: 50px;">
-	<img src="tree.png">
-	<table class="subMenu" style="margin-left: 38%;">
+<div class="rain" id="animation" style="left: 48%; top: 7%"><img src="raindrop.png"></div>
+
+<table class="container">
+	<td style="float: left;">
+<div class="ad-left" style="width: 250px; height: 100%;">
+	<script type="text/javascript">
+	amzn_assoc_placement = "adunit0";
+	amzn_assoc_tracking_id = "treeologyadmi-20";
+	amzn_assoc_ad_mode = "manual";
+	amzn_assoc_ad_type = "smart";
+	amzn_assoc_marketplace = "amazon";
+	amzn_assoc_region = "US";
+	amzn_assoc_linkid = "28bccc5092e62dd5021227d98624ea7d";
+	amzn_assoc_title = "My Amazon Picks";
+	amzn_assoc_search_bar = "true";
+	amzn_assoc_asins = "B00LE4RGOE,B00627GJZA,B00XTS39EE,B0756FCPPN";
+	</script>
+	<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+
+	<script type="text/javascript">
+	amzn_assoc_placement = "adunit0";
+	amzn_assoc_tracking_id = "treeologyadmi-20";
+	amzn_assoc_ad_mode = "manual";
+	amzn_assoc_ad_type = "smart";
+	amzn_assoc_marketplace = "amazon";
+	amzn_assoc_region = "US";
+	amzn_assoc_linkid = "28bccc5092e62dd5021227d98624ea7d";
+	amzn_assoc_title = "My Amazon Picks";
+	amzn_assoc_search_bar = "true";
+	amzn_assoc_asins = "B00LE4RGOE,B00627GJZA,B00XTS39EE,B0756FCPPN";
+	</script>
+	<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+
+	<script type="text/javascript">
+	amzn_assoc_placement = "adunit0";
+	amzn_assoc_tracking_id = "treeologyadmi-20";
+	amzn_assoc_ad_mode = "manual";
+	amzn_assoc_ad_type = "smart";
+	amzn_assoc_marketplace = "amazon";
+	amzn_assoc_region = "US";
+	amzn_assoc_linkid = "28bccc5092e62dd5021227d98624ea7d";
+	amzn_assoc_title = "My Amazon Picks";
+	amzn_assoc_search_bar = "true";
+	amzn_assoc_asins = "B00LE4RGOE,B00627GJZA,B00XTS39EE,B0756FCPPN";
+	</script>
+	<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+
+	<script type="text/javascript">
+	amzn_assoc_placement = "adunit0";
+	amzn_assoc_tracking_id = "treeologyadmi-20";
+	amzn_assoc_ad_mode = "manual";
+	amzn_assoc_ad_type = "smart";
+	amzn_assoc_marketplace = "amazon";
+	amzn_assoc_region = "US";
+	amzn_assoc_linkid = "28bccc5092e62dd5021227d98624ea7d";
+	amzn_assoc_title = "My Amazon Picks";
+	amzn_assoc_search_bar = "true";
+	amzn_assoc_asins = "B00LE4RGOE,B00627GJZA,B00XTS39EE,B0756FCPPN";
+	</script>
+	<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+</div>
+</td>
+<td class="center-section">
+<div class="main" style="text-align: center; padding-top: 150px;">
+	<img class="tree" src="tree.png"><br>
+	<progress value="0" max="100">
+	</progress>
+	<table class="subMenu" style="margin: auto">
 		<tr>
-		<td class="water"><a href=""><img src="water.png"></a></td>
+		<td class="water"><img src="water.png"></td>
 		
-		<td class="question"><a href=""><img src="question.png"></a></td>
+		<td class="question"><a href="#trivia"><img src="question.png"></a></td>
 		
-		<td class="puzzle"><a href=""><img src="puzzle.png"></a></td>
+		<td class="donate"><a href="#donate"><img src="donate.png"></a></td>
 		</tr>
 		<tr>
-		<td class="water"><a href="">Water</a></td>
+		<td class="water">Water</td>
 		
-		<td class="question"><a href="">Trivia</a></td>
+		<td class="question"><a href="#trivia">Trivia</a></td>
 		
-		<td class="puzzle"><a href="">Puzzles</a></td>
+		<td class="donate"><a href="#donate"></a>Donate</td>
 		</tr>
 	</table>
 </div>
-<div class="ad-right"></div>
-<div class="ad-left"></div>
+
+<div id="plant">
+	<h1>Our Earth is hurting...</h1>
+	<h2>but YOU can help.<h2>
+	<h3>Humans cut down 15 billion trees every year. Help us replant them.</h3>
+	<p>By watering the tree and answering trivia questions, you can help us generate revenue to be donated to the following non-profits, devoted to reversing the detrimental effects of deforestation and climate change.
+	</p>
+</div>
+<div id="info">
+	<p><a href="https://www.hommesetterre.com">Hommes Et Terre</a>, a landscape restoration and agroforestry company that plants trees across Burkina Faso, slowly reforesting the Sahel deserts.</p>
+
+	<p><a href="http://www.fundaciondia.org">Fundacion DIA</a>, an organization based in Nicaragua, Goldstandard certified in 2014, which is preserving the remaining Nicaraguan rainforest.</p>
+
+	<p><a href="https://edenprojects.org">Eden Reforestation Projects</a>, an organization which works to bring trees and vegetation to various locations worldwide, including Nepal, Madagascar, Haiti, Indonesia, Kenya and Mozambique, by helping local villages plant trees.</p>
+
+	<p><a href="http://www.greenethiopia.org/cms/en/">Foundation Green Ethiopia</a>, an organization which aims to reforest Ethiopia with greenery and trees</p>
+
+	<p><a href="https://masarang.nl/en/">Masarang Foundation</a>, based in Indonesia and created to reforest the Masarang Mountain, this project that began in 2000 and has since expanded immensly, solving problems worldwide, such as deforestation, biodiversity loss, climate change, poverty and underdevelopment. 
+
+	</p>
+</div>
+
+<div id="trivia" class="trivia-container">
+	<h1>Tree Trivia</h1>
+	<table>
+		<tr>
+			<td class="question"><p>How do you say tree in German?</p></td>
+		</tr>
+		<tr>
+			<td class="answer answer0" id="ans1"><p>A. Der Tree</p></td>
+		</tr>
+		
+		<tr>
+			<td class="answer answer1" id="ans2"><p>B. Das Bauch</p></td>
+		</tr>
+		<tr>
+			<td class="answer answer2" id="ans3"><p>C. Der Baum</p></td>
+		</tr>
+		<tr>
+			<td class="answer answer3" id="ans4"><p>D. Die Holzstück</p></td>
+		</tr>
+	</table>
+</div>
+<div id="donate"><h1>Donate now. Spending a little, can grow a lot.</h1>
+$<input type="text"/>
+</div>
+</td>
+<td style="float: right">
+<div class="ad-right" style="width: 250px; height: 100%;">
+	<script type="text/javascript">
+	amzn_assoc_placement = "adunit0";
+	amzn_assoc_tracking_id = "treeologyadmi-20";
+	amzn_assoc_ad_mode = "manual";
+	amzn_assoc_ad_type = "smart";
+	amzn_assoc_marketplace = "amazon";
+	amzn_assoc_region = "US";
+	amzn_assoc_linkid = "28bccc5092e62dd5021227d98624ea7d";
+	amzn_assoc_title = "My Amazon Picks";
+	amzn_assoc_search_bar = "true";
+	amzn_assoc_asins = "B00LE4RGOE,B00627GJZA,B00XTS39EE,B0756FCPPN";
+	</script>
+	<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+
+	<script type="text/javascript">
+	amzn_assoc_placement = "adunit0";
+	amzn_assoc_tracking_id = "treeologyadmi-20";
+	amzn_assoc_ad_mode = "manual";
+	amzn_assoc_ad_type = "smart";
+	amzn_assoc_marketplace = "amazon";
+	amzn_assoc_region = "US";
+	amzn_assoc_linkid = "28bccc5092e62dd5021227d98624ea7d";
+	amzn_assoc_title = "My Amazon Picks";
+	amzn_assoc_search_bar = "true";
+	amzn_assoc_asins = "B00LE4RGOE,B00627GJZA,B00XTS39EE,B0756FCPPN";
+	</script>
+	<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+
+	<script type="text/javascript">
+	amzn_assoc_placement = "adunit0";
+	amzn_assoc_tracking_id = "treeologyadmi-20";
+	amzn_assoc_ad_mode = "manual";
+	amzn_assoc_ad_type = "smart";
+	amzn_assoc_marketplace = "amazon";
+	amzn_assoc_region = "US";
+	amzn_assoc_linkid = "28bccc5092e62dd5021227d98624ea7d";
+	amzn_assoc_title = "My Amazon Picks";
+	amzn_assoc_search_bar = "true";
+	amzn_assoc_asins = "B00LE4RGOE,B00627GJZA,B00XTS39EE,B0756FCPPN";
+	</script>
+	<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+
+	<script type="text/javascript">
+	amzn_assoc_placement = "adunit0";
+	amzn_assoc_tracking_id = "treeologyadmi-20";
+	amzn_assoc_ad_mode = "manual";
+	amzn_assoc_ad_type = "smart";
+	amzn_assoc_marketplace = "amazon";
+	amzn_assoc_region = "US";
+	amzn_assoc_linkid = "28bccc5092e62dd5021227d98624ea7d";
+	amzn_assoc_title = "My Amazon Picks";
+	amzn_assoc_search_bar = "true";
+	amzn_assoc_asins = "B00LE4RGOE,B00627GJZA,B00XTS39EE,B0756FCPPN";
+	</script>
+	<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+</div>
+</td>
+</table>
+
+
+
 </body>
 </html>
